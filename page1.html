@@ -4,8 +4,26 @@
     <style>
       *{
         font-family:Arial;
+        margin: 0;
+        padding: 0;
       }
       body {
+        background: rgb(32, 1, 9);
+        
+        background: linear-gradient(
+          90deg,
+          rgba(32, 1, 9, 1) 4%,
+          rgba(9, 4, 78, 1) 56%,
+          rgba(37, 2, 19, 1) 100%,
+          rgba(9, 9, 121, 1) 100%
+        );
+      }
+      .bar{
+        position : fixed;
+        margin: 0;
+        z-index: 100;
+        width : 100%;
+        height : auto;
         background: rgb(32, 1, 9);
         background: linear-gradient(
           90deg,
@@ -21,7 +39,7 @@
         align-items: center;
       }
       .lnav {
-        margin: 0;
+        margin-left: 0px;
         padding: 0px;
       }
       .rnav {
@@ -56,7 +74,10 @@
         background: linear-gradient(to bottom, #ff6464 0%, #ff3a3a 100%);
         padding: 3% 0;
         margin: 0;
-        width : 100%;
+        width : 80%;
+        position : absolute;
+        top : 110%;
+        left :10%; 
         height : 30px;
         border-radius: 10px;
         display: flex;
@@ -73,9 +94,19 @@
         cursor: default;
         color: crimson;
       }
+      p{
+        font-size: 18px;
+        font-family: "D-DIN Condensed";
+        font-weight: normal;
+        color: white;
+        line-height: 140%;
+        padding: 0 15%;
+        letter-spacing: 0.8px;
+      }
     </style>
   </head>
   <body>
+    <div class="bar">
     <div class="nav">
       <div class="lnav">
         <ul type="none" class="navb">
@@ -93,7 +124,7 @@
       </div>
       <div class="rnav">
         <ul type="none" class="navb">
-          <li>EVENTS</li>
+          <li style="margin-left: 15px;">EVENTS</li>
           <li>ABOUT US</li>
         </ul>
       </div>
@@ -115,6 +146,7 @@
         ); ;
       "
     ></div>
+    </div>
     <div class="wrapper" style="background-image: url('src/bgmi2.jpg');margin: 0; padding: 0; height : 900px; width : 1510px;">
       <div class="title" style="color:rgb(253, 0, 51);font-size:20px;font-weight: 800;letter-spacing: 1.6px;position:relative;top:50%;text-align: center;">
         <h1 style="text-shadow: whitesmoke 2px 2px 5px;">BATTLEGROUNDS MOBILE</h1>
@@ -122,14 +154,22 @@
     </div>
     <div class="recordrow">
         <div class="record">
-          LIKES
-        </div>
-        <div class="record">
           TOURNAMENTS
         </div>
         <div class="record">
           PLAYERS
         </div>
     </div>
+    <div class="about" style="margin: 10% 0% 0% 20%;z-index: 100;">
+      <div class="abt" style="text-align: center;width:80%;">
+        <h1 style="font-family: 'Arial Narrow';color:crimson;">- ABOUT -</h1>
+        <br/>
+        <br/>
+        <p style="font-family: 'Arial Narrow';font-size: 18px;color:white">
+          BATTLEGROUNDS MOBILE INDIA is a new free game made for Indians. As promised, we come with an exciting array of Launch events to celebrate the week, and even beyond. As more and more players join the game, India Ka Battlegrounds event rewards you with a permanent purple outfit for free, so invite your friends and get set! There is more to come such as Weekend Vibes, Celebration Time, Friends for Life and much more with exciting rewards from outfits to weapon skins. Tune into the lobby and drop onto the battlegrounds today! Set in a virtual world, BATTLEGROUNDS MOBILE INDIA is a new battle royale game where multiple players employ strategies to fight and be the last man standing on the battlegrounds. A free to play, multiplayer experience, in BATTLEGROUNDS MOBILE INDIA, players can battle it out in diverse game modes which can be squad-based or solo.
+          </p>
+      </div>
+    </div>
+
   </body>
 </html>
