@@ -1,0 +1,113 @@
+<html>
+  <head>
+    <style>
+      * {
+        font-family: Arial;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background: rgb(32, 1, 9);
+
+        background: linear-gradient(
+          90deg,
+          rgba(32, 1, 9, 1) 4%,
+          rgba(9, 4, 78, 1) 56%,
+          rgba(37, 2, 19, 1) 100%,
+          rgba(9, 9, 121, 1) 100%
+        );
+      }
+      .bar {
+        position: fixed;
+        margin: 0;
+        z-index: 100;
+        width: 100%;
+        height: auto;
+        background: rgb(32, 1, 9);
+        background: linear-gradient(
+          90deg,
+          rgba(32, 1, 9, 1) 4%,
+          rgba(9, 4, 78, 1) 56%,
+          rgba(37, 2, 19, 1) 100%,
+          rgba(9, 9, 121, 1) 100%
+        );
+      }
+      .nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .lnav {
+        margin-left: 0px;
+        padding: 0px;
+      }
+      .rnav {
+        margin: 0;
+        padding: 0px;
+      }
+      .dp {
+        position: absolute;
+        top: 15px;
+        right: 100px;
+      }
+      ul.navb {
+        display: flex;
+        flex-direction: row;
+        color: white;
+        font-size: small;
+        font-family: Arial;
+      }
+      li {
+        margin-right: 25px;
+        transition: color ease-in 0.3s;
+      }
+      li:hover {
+        cursor: pointer;
+        border-bottom: 2px solid crimson;
+        color: crimson;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bar">
+      <div class="nav">
+        <div class="lnav">
+          <ul type="none" class="navb">
+            <li>HOME</li>
+            <li>GAMES</li>
+            <li>CONTACT US</li>
+          </ul>
+        </div>
+        <div class="mnav">
+          <img
+            src="src/ignite Logo-modified.png"
+            alt="Igniting the flame"
+            style="width: 70px"
+          />
+        </div>
+        <div class="rnav">
+          <ul type="none" class="navb">
+            <li style="margin-left: 15px">EVENTS</li>
+            <li>ABOUT US</li>
+          </ul>
+        </div>
+      </div>
+      <div class="dp">
+        <a href=""><img src="src/user.png" alt="wait" width="50px" /></a>
+      </div>
+      <div
+        style="
+          height: 3px;
+          background: rgb(9, 50, 116);
+          background: linear-gradient(
+            90deg,
+            rgba(9, 50, 116, 1) 0%,
+            rgba(255, 0, 86, 1) 52%,
+            rgba(9, 9, 121, 1) 90%,
+            rgba(6, 5, 79, 1) 99%
+          ); ;
+        "
+      ></div>
+    </div>
+  </body>
+</html>
